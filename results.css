@@ -19,7 +19,7 @@ p {
 
 .main-card {
   display: grid;
-  width: 70%;
+  width: 50%;
   grid-template-columns: 1fr 1fr;
 }
 
