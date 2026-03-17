@@ -18,15 +18,14 @@ p {
 }
 
 .main-card {
-  display: flex;
-  position: relative;
+  display: grid;
+  width: 70%;
+  grid-template-columns: 1fr 1fr;
 }
 
 .result-card {
-  background-color: hsl(241, 81%, 54%);
   display: flex;
   flex-direction: column;
-  width: 50%;
   color: hsl(241, 100%, 89%);
   border-radius: 25px;
   align-items: center;
@@ -40,16 +39,12 @@ p {
 
 .summary-card {
   background-color: hsl(0, 0%, 100%);
-  width: 50%;
   border-radius: 0px 25px 25px 0px;
-  grid-template-rows: auto auto;
-  justify-content: space-between;
 }
 
 .overall-score {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   border-radius: 50%;
   background: linear-gradient(
@@ -68,7 +63,6 @@ p {
 }
 
 .max-score {
-  color: hsl(224, 30%, 27%);
   font-size: 18px;
   font-weight: 500;
   margin-top: 0px;
@@ -197,7 +191,7 @@ a:hover {
   );
 }
 
-@media (max-width: 715px) {
+@media (max-width: 815px) {
   main {
     width: 100%;
     align-items: flex-start;
